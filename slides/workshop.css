@@ -6,12 +6,12 @@
 
 /* Fonts! Sizes! And a bit of color. */
 .remark-slide-content {
-  font-family: 'Droid Serif';
+  font-family: 'Arial';
   font-size: 25px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Droid Serif';
+  font-family: 'Arial';
   font-weight: bold;
   font-size: 45px !important;
   margin-top: 0.5em;
@@ -50,6 +50,8 @@ code.remark-code {
 /* put slide numbers in top-right corner instead of bottom-right */
 div.remark-slide-number {
   top: 6px;
+  font-family: 'Arial'
+  font-size: 12px
   left: unset;
   bottom: unset;
   right: 6px;

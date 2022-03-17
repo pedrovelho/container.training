@@ -21,22 +21,22 @@ exclude:
 
 content:
 - shared/title.md
-- logistics.md
-- swarm/intro.md
-- shared/about-slides.md
-- shared/chat-room-im.md
+#- logistics.md
+#- swarm/intro.md
+#- shared/about-slides.md
+#- shared/chat-room-im.md
 #- shared/chat-room-slack.md
 #- shared/chat-room-zoom-meeting.md
 #- shared/chat-room-zoom-webinar.md
-- shared/toc.md
-- - shared/prereqs.md
-  - shared/connecting.md
-  - swarm/versions.md
-  - shared/sampleapp.md
-  - shared/composescale.md
-  - shared/hastyconclusions.md
-  - shared/composedown.md
-  - swarm/swarmkit.md
+#- shared/toc.md
+#- #- shared/prereqs.md
+  #- shared/connecting.md
+  #- swarm/versions.md
+  #- shared/sampleapp.md
+  #- shared/composescale.md
+  #- shared/hastyconclusions.md
+  #- shared/composedown.md
+- - swarm/swarmkit.md
   - shared/declarative.md
   - swarm/swarmmode.md
   - swarm/creatingswarm.md

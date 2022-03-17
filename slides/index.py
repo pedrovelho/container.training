@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-FLAGS=dict(
-  cz=u"🇨🇿",
-  de=u"🇩🇪",
-  fr=u"🇫🇷",
-  uk=u"🇬🇧",
-  us=u"🇺🇸",
-  www=u"🌐",
+FLAGS = dict(
+    cz=u"🇨🇿",
+    de=u"🇩🇪",
+    fr=u"🇫🇷",
+    uk=u"🇬🇧",
+    us=u"🇺🇸",
+    www=u"🌐",
 )
 
-TEMPLATE="""<html>
+TEMPLATE = """<html>
 <head>
   <title>{{ title }}</title>
   <link rel="stylesheet" href="index.css">
@@ -19,24 +19,13 @@ TEMPLATE="""<html>
 <body>
   <div class="main">
     <table>
+      <tr><td class="details" colspan="3" align="center"><img src="images/logoSparks2020-2.png"/></td></tr>
+      <tr><td class="details" colspan="3"></td></tr>
       <tr><td class="header" colspan="3">{{ title }}</td></tr>
-      <tr><td class="details" colspan="3">Note: while some workshops are delivered in other languages, slides are always in English.</td></tr>
-
-      <tr><td class="title" colspan="3">Free Kubernetes intro course</td></tr>
-
+      <tr><td class="details" colspan="3">Instructor Pedro Velho, based on the free course from Jérome Pezzoni.</td></tr>
+      
       <tr>
-      	<td>Getting Started With Kubernetes and Container Orchestration</td>
-      	<td><a class="slides" href="https://qconuk2019.container.training" /></td>
-      	<td><a class="video" href="https://www.youtube.com/playlist?list=PLBAFXs0YjviJwCoxSUkUPhsSxDJzpZbJd" /></td>
-      </tr>
-      <tr>
-        <td class="details">This is a live recording of a 1-day workshop that took place at QCON London in March 2019.</td>
-      </tr>
-      <tr>
-        <td class="details">If you're interested, we can deliver that workshop (or longer courses) to your team or organization.</td>
-      </tr>
-      <tr>
-        <td class="details">Contact <a href="mailto:jerome.petazzoni@gmail.com">Jérôme Petazzoni</a> to make that happen!</td>
+      	<td><a class="slides" href="https://ryaxtech.github.io/docker.training/" /></td>
       </tr>
 
       {% if coming_soon %}
@@ -130,7 +119,7 @@ TEMPLATE="""<html>
 
       <tr>
         <td class="footer">
-          Maintained by Jérôme Petazzoni (<a href="https://twitter.com/jpetazzo">@jpetazzo</a>) and <a href="https://github.com/jpetazzo/container.training/graphs/contributors">contributors</a>.
+          Ryax based on the original free course from Jérôme Petazzoni <a href="https://github.com/jpetazzo/container.training/">free course source</a>.
         </td>
       </tr>
     </table>
@@ -147,14 +136,14 @@ items = yaml.safe_load(open("index.yaml"))
 
 def prettyparse(date):
     months = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
     ]
-    month = months[date.month-1]
+    month = months[date.month - 1]
     suffix = {
-            1: "st", 2: "nd", 3: "rd",
-            21: "st", 22: "nd", 23: "rd",
-            31: "st"}.get(date.day, "th")
+        1: "st", 2: "nd", 3: "rd",
+        21: "st", 22: "nd", 23: "rd",
+        31: "st"}.get(date.day, "th")
     return date.year, month, "{}{}".format(date.day, suffix)
 
 
@@ -190,7 +179,7 @@ for item in items:
         item["begin"] = date_begin
         item["end"] = date_end
         item["prettydate"] = pretty_date
-    item["flag"] = FLAGS.get(item.get("country"),"")
+    item["flag"] = FLAGS.get(item.get("country"), "")
 
 today = datetime.date.today()
 coming_soon = [i for i in items if i.get("date") and i["end"] >= today]
@@ -203,15 +192,15 @@ recorded_workshops = [i for i in items if i.get("video")]
 template = jinja2.Template(TEMPLATE)
 with open("index.html", "w") as f:
     f.write(template.render(
-    	title="Container Training",
-    	coming_soon=coming_soon,
-    	past_workshops=past_workshops,
-    	self_paced=self_paced,
-    	recorded_workshops=recorded_workshops
-    	))
+        title="Container Training",
+        coming_soon=coming_soon,
+        past_workshops=past_workshops,
+        self_paced=self_paced,
+        recorded_workshops=recorded_workshops
+    ))
 
 with open("past.html", "w") as f:
-	f.write(template.render(
-		title="Container Training",
-		all_past_workshops=past_workshops
-		))
+    f.write(template.render(
+        title="Container Training",
+        all_past_workshops=past_workshops
+    ))
