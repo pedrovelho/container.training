@@ -39,13 +39,13 @@ your own tutorials.
 All these materials have been gathered in a single repository
 because they have a few things in common:
 
-- some [shared slides](slides/shared/) that are re-used
+- some [shared slides](docs/shared/) that are re-used
   (and updated) identically between different decks;
-- a [build system](slides/) generating HTML slides from
+- a [build system](docs/) generating HTML slides from
   Markdown source files;
-- a [semi-automated test harness](slides/autopilot/) to check
+- a [semi-automated test harness](docs/autopilot/) to check
   that the exercises and examples provided work properly;
-- a [PhantomJS script](slides/slidechecker.js) to check
+- a [PhantomJS script](docs/slidechecker.js) to check
   that the slides look good and don't have formatting issues;
 - [deployment scripts](prepare-vms/) to start training
   VMs in bulk;
@@ -89,7 +89,7 @@ a few other contributors. It is actively maintained.
 - [prepare-vms](prepare-vms/):
   - Scripts to automate the creation of AWS instances for students.
     These are routinely used and actively maintained.
-- [slides](slides/):
+- [slides](docs/):
   - All the slides! They are assembled from Markdown files with
     a custom Python script, and then rendered using [gnab/remark](
     https://github.com/gnab/remark). Check this directory for more details.

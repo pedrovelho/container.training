@@ -29,7 +29,7 @@ filter() {
       slides/*.yml) continue;;
       slides/logistics*.md) continue;;
       # Specific content that can be ignored
-      #slides/containers/Local_Environment.md) threshold=100;;
+      #docs/containers/Local_Environment.md) threshold=100;;
       # Content that was moved/refactored enough to confuse us
       slides/containers/Local_Environment.md) threshold=100;;
       slides/exercises.md) continue;;

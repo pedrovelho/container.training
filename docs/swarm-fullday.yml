@@ -3,6 +3,7 @@ title: |
   with Docker and Swarm
 
 chat: "[Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)"
+#chat: "[Gitter](https://gitter.im/jpetazzo/workshop-yyyymmdd-city)"
 
 gitrepo: github.com/jpetazzo/container.training
 
@@ -11,33 +12,31 @@ slides: https://container.training/
 #slidenumberprefix: "#SomeHashTag &mdash; "
 
 exclude:
-- in-person
+- self-paced
+- snap
 - btp-auto
+- benchmarking
+- elk-manual
+- prom-manual
 
 content:
 - shared/title.md
-#- shared/logistics.md
-- swarm/intro.md
-- shared/about-slides.md
+#- logistics.md
+#- swarm/intro.md
+#- shared/about-docs.md
 #- shared/chat-room-im.md
 #- shared/chat-room-slack.md
 #- shared/chat-room-zoom-meeting.md
 #- shared/chat-room-zoom-webinar.md
-- shared/toc.md
-- - shared/prereqs.md
-  - shared/connecting.md
-  - swarm/versions.md
-  - |
-    name: part-1
-
-    class: title, self-paced
-
-    Part 1
-  - shared/sampleapp.md
-  - shared/composescale.md
-  - shared/hastyconclusions.md
-  - shared/composedown.md
-  - swarm/swarmkit.md
+#- shared/toc.md
+#- #- shared/prereqs.md
+  #- shared/connecting.md
+  #- swarm/versions.md
+  #- shared/sampleapp.md
+  #- shared/composescale.md
+  #- shared/hastyconclusions.md
+  #- shared/composedown.md
+- - swarm/swarmkit.md
   - shared/declarative.md
   - swarm/swarmmode.md
   - swarm/creatingswarm.md
@@ -51,28 +50,21 @@ content:
   - swarm/swarmready.md
   - swarm/stacks.md
   - swarm/cicd.md
-  - |
-    name: part-2
-
-    class: title, self-paced
-
-    Part 2
-- - swarm/operatingswarm.md
-  - swarm/netshoot.md
-  - swarm/swarmnbt.md
-  - swarm/ipsec.md
   - swarm/updatingservices.md
   - swarm/rollingupdates.md
   - swarm/healthchecks.md
-  - swarm/nodeinfo.md
+- - swarm/operatingswarm.md
+  - swarm/netshoot.md
+  - swarm/ipsec.md
   - swarm/swarmtools.md
-- - swarm/security.md
+  - swarm/security.md
   - swarm/secrets.md
   - swarm/encryptionatrest.md
   - swarm/leastprivilege.md
   - swarm/apiscope.md
-  - swarm/logging.md
+- - swarm/logging.md
   - swarm/metrics.md
+  - swarm/gui.md
   - swarm/stateful.md
   - swarm/extratips.md
   - shared/thankyou.md

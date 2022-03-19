@@ -109,7 +109,7 @@ class Slide(object):
         self.number = Slide.current_slide
         Slide.current_slide += 1
 
-        # Remove commented-out slides
+        # Remove commented-out docs
         # (remark.js considers ??? to be the separator for speaker notes)
         content = re.split("\n\?\?\?\n", content)[0]
         self.content = content
@@ -491,7 +491,7 @@ while True:
         print("s       Simulate keystrokes")
         print("v       Validate exit status")
         print("d       Switch desktop")
-        print("k       Sync slides")
+        print("k       Sync docs")
         print("o       Open links")
         print("h       Run hidden commands")
         print("g       Go to a specific slide")

@@ -94,15 +94,15 @@ def generatefromyaml(manifest, filename):
         if override:
             manifest[k] = override
 
-    for k in ["chat", "gitrepo", "slides", "title"]:
+    for k in ["chat", "gitrepo", "docs", "title"]:
         if k not in manifest:
             manifest[k] = ""
 
     if "zip" not in manifest:
-        if manifest["slides"].endswith('/'):
-            manifest["zip"] = manifest["slides"] + "slides.zip"
+        if manifest["docs"].endswith('/'):
+            manifest["zip"] = manifest["docs"] + "docs.zip"
         else:
-            manifest["zip"] = manifest["slides"] + "/slides.zip"
+            manifest["zip"] = manifest["docs"] + "/docs.zip"
 
     if "html" not in manifest:
         manifest["html"] = filename + ".html"
@@ -124,7 +124,7 @@ def generatefromyaml(manifest, filename):
 
     markdown = markdown.replace(
         ".debug[",
-        ".debug[\n```\n{}\n```\n\nThese slides have been built from commit: {}\n\n".format(dirtyfiles, commit),
+        ".debug[\n```\n{}\n```\n\nThese docs have been built from commit: {}\n\n".format(dirtyfiles, commit),
         1)
 
     markdown = markdown.replace("@@TITLE@@", manifest["title"].replace("\n", "<br/>"))
@@ -134,7 +134,7 @@ def generatefromyaml(manifest, filename):
     html = html.replace("@@EXCLUDE@@", exclude)
     html = html.replace("@@CHAT@@", manifest["chat"])
     html = html.replace("@@GITREPO@@", manifest["gitrepo"])
-    html = html.replace("@@SLIDES@@", manifest["slides"])
+    html = html.replace("@@SLIDES@@", manifest["docs"])
     html = html.replace("@@ZIP@@", manifest["zip"])
     html = html.replace("@@HTML@@", manifest["html"])
     html = html.replace("@@TITLE@@", manifest["title"].replace("\n", " "))

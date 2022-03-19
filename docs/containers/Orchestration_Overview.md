@@ -185,7 +185,7 @@ Difficulty: easy!
 
 ---
 
-<!-- Warning, two almost identical slides (for img effect) -->
+<!-- Warning, two almost identical docs (for img effect) -->
 
 ## Exercise 2
 
@@ -207,7 +207,7 @@ Difficulty: ???
 
 ---
 
-<!-- Warning, two almost identical slides (for img effect) -->
+<!-- Warning, two almost identical docs (for img effect) -->
 
 ## Exercise 2
 

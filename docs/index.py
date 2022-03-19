@@ -31,7 +31,7 @@ TEMPLATE = """<html>
         {% for item in coming_soon %}
           <tr>
             <td>{{ item.flag }} {{ item.title }}</td>
-            <td>{% if item.slides %}<a class="slides" href="{{ item.slides }}" />{% endif %}</td>
+            <td>{% if item.docs %}<a class="docs" href="{{ item.docs }}" />{% endif %}</td>
             <td>{% if item.attend %}<a class="attend" href="{{ item.attend }}" />
             {% else %}
               <p class="details">{{ item.status }}</p>
@@ -49,7 +49,7 @@ TEMPLATE = """<html>
         {% for item in past_workshops[:5] %}
           <tr>
             <td>{{ item.title }}</td>
-            <td>{% if item.slides %}<a class="slides" href="{{ item.slides }}" />
+            <td>{% if item.docs %}<a class="docs" href="{{ item.docs }}" />
             {% else %}
               <p class="details">{{ item.status }}</p>
             {% endif %}</td>
@@ -74,7 +74,7 @@ TEMPLATE = """<html>
         {% for item in recorded_workshops %}
           <tr>
             <td>{{ item.title }}</td>
-            <td><a class="slides" href="{{ item.slides }}" /></td>
+            <td><a class="docs" href="{{ item.docs }}" /></td>
             <td><a class="video" href="{{ item.video }}" /></td>
           </tr>
           <tr>
@@ -88,7 +88,7 @@ TEMPLATE = """<html>
         {% for item in self_paced %}
           <tr>
             <td>{{ item.title }}</td>
-            <td><a class="slides" href="{{ item.slides }}" /></td>
+            <td><a class="docs" href="{{ item.docs }}" /></td>
           </tr>
         {% endfor %}
       {% endif %}
@@ -98,7 +98,7 @@ TEMPLATE = """<html>
         {% for item in all_past_workshops %}
           <tr>
             <td>{{ item.title }}</td>
-            <td>{% if item.slides %}<a class="slides" href="{{ item.slides }}" />
+            <td>{% if item.docs %}<a class="docs" href="{{ item.docs }}" />
             {% else %}
               <p class="details">{{ item.status }}</p>
             {% endif %}</td>
