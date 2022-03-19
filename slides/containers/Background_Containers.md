@@ -156,6 +156,24 @@ Check that `docker ps` correctly reports all 3 containers.
 
 ---
 
+## Extra options
+
+Useful options, more on that later.
+
+* `-v <srcFile>:<dstFile>`: copy local file `<srcFile>` to `<dstFile>` inside the container
+* `-p <localPort>:<ctnPort>` : redirect `localPort` to container `ctnPort`
+
+Example of a quick custom webserver:
+
+```bash
+$ echo "Salut mamie" > ~/index.html
+$ docker run -dti -p 8080:80 -v $PWD/index.html:/usr/local/apache2/htdocs/index.html httpd
+```
+
+![Background containers](images/salut_mamie.png)
+
+---
+
 ## Viewing only the last container started
 
 When many containers are already running, it can be useful to
