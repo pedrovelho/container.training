@@ -1,8 +1,6 @@
 ## A brief introduction
 
-- This was initially written to support in-person, instructor-led workshops and tutorials
-
-- These materials are maintained by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and [multiple contributors](https://@@GITREPO@@/graphs/contributors)
+- Based on the free material maintained by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and [multiple contributors](https://@@GITREPO@@/graphs/contributors)
 
 - You can also follow along on your own, at your own pace
 
@@ -17,23 +15,3 @@
   [StackOverflow](http://stackoverflow.com/questions/tagged/docker),
   and other outlets
 
----
-
-class: self-paced
-
-## Hands on, you shall practice
-
-- Nobody ever became a Jedi by spending their lives reading Wookiepedia
-
-- Likewise, it will take more than merely *reading* these slides
-  to make you an expert
-
-- These slides include *tons* of demos, exercises, and examples
-
-- They assume that you have access to a machine running Docker
-
-- If you are attending a workshop or tutorial:
-  <br/>you will be given specific instructions to access a cloud VM
-
-- If you are doing this on your own:
-  <br/>we will tell you how to install Docker or access a Docker environment

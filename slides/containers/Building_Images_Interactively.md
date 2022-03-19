@@ -159,6 +159,24 @@ $ docker run -it figlet
 
 ---
 
+## Backup/Restore images
+
+You can backup restore images using `docker save` and `docker load` commands.
+
+This is not the recommended way for continuous integration.
+
+```bash
+$ docker save figlet > figlet.tgz
+```
+
+To restore the image use:
+
+```bash
+$ docker load < figlet.tgz
+```
+
+---
+
 ## What's next?
 
 Manual process = bad.

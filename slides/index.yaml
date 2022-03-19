@@ -1,6 +1,3 @@
-- title: Introduction to Docker and Containers
+- title: Docker, create, build, manage containers
   slides: intro-selfpaced.yml.html
-
-- title: Container Orchestration with Docker and Swarm
-  slides: swarm-fullday.yml.html
 

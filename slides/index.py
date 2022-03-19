@@ -24,9 +24,6 @@ TEMPLATE = """<html>
       <tr><td class="header" colspan="3">{{ title }}</td></tr>
       <tr><td class="details" colspan="3">Instructor Pedro Velho, based on the free course from Jérome Pezzoni.</td></tr>
       
-      <tr>
-      	<td><a class="slides" href="https://ryaxtech.github.io/docker.training/" /></td>
-      </tr>
 
       {% if coming_soon %}
         <tr><td class="title" colspan="3">Coming soon</td></tr>
@@ -87,7 +84,7 @@ TEMPLATE = """<html>
       {% endif %}
 
       {% if self_paced %}
-        <tr><td class="title" colspan="3">Self-paced tutorials</td></tr>
+        <tr><td class="title" colspan="3">Tutorials</td></tr>
         {% for item in self_paced %}
           <tr>
             <td>{{ item.title }}</td>
@@ -117,11 +114,6 @@ TEMPLATE = """<html>
 
       <tr><td class="spacer"></td></tr>
 
-      <tr>
-        <td class="footer">
-          Ryax based on the original free course from Jérôme Petazzoni <a href="https://github.com/jpetazzo/container.training/">free course source</a>.
-        </td>
-      </tr>
     </table>
   </div>
 </body>
@@ -192,7 +184,7 @@ recorded_workshops = [i for i in items if i.get("video")]
 template = jinja2.Template(TEMPLATE)
 with open("index.html", "w") as f:
     f.write(template.render(
-        title="Container Training",
+        title="Docker Training",
         coming_soon=coming_soon,
         past_workshops=past_workshops,
         self_paced=self_paced,
@@ -201,6 +193,6 @@ with open("index.html", "w") as f:
 
 with open("past.html", "w") as f:
     f.write(template.render(
-        title="Container Training",
+        title="Docker Training",
         all_past_workshops=past_workshops
     ))
