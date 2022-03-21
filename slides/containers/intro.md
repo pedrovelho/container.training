@@ -1,17 +1,57 @@
-## A brief introduction
+## Links
 
-- Based on the free material maintained by [Jérôme Petazzoni](https://twitter.com/jpetazzo) and [multiple contributors](https://@@GITREPO@@/graphs/contributors)
+- Download all slides [here](https://pedrovelho.github.io/container.training/slides/slides.zip)
+ 
+- If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/containers.training)
 
-- You can also follow along on your own, at your own pace
+- [Tutorials](https://github.com/pedrovelho/containers.training.tutorials)
 
-- We included as much information as possible in these slides
+- Check our example application rest-server [here](https://github.com/pedrovelho/containers.training.rest-server)
 
-- We recommend having a mentor to help you ...
+- We included as much information as possible in these slides, we will skip some
+ 
 
-- ... Or be comfortable spending some time reading the Docker
- [documentation](https://docs.docker.com/) ...
+---
 
-- ... And looking for answers in the [Docker forums](forums.docker.com),
-  [StackOverflow](http://stackoverflow.com/questions/tagged/docker),
-  and other outlets
+## References
+
+- [Docker documentation](https://docs.docker.com/get-started/)
+
+- [Docker forums](forums.docker.com)
+
+- [StackOverflow](http://stackoverflow.com/questions/tagged/docker)
+
+- [The Docker Book](http://lsi.vc.ehu.es/pablogn/docencia/manuales/The%20Docker%20Book.pdf)
+
+- [freeCodeCamp - The Docker Handbook 2021 Edition](https://www.freecodecamp.org/news/the-docker-handbook/)
+
+
+---
+
+## Tutorials
+
+* 1 Install docker
+
+* 2 Basic docker commands
+
+* 3 Working with images
+
+* 4 Building images
+
+* 5 Network
+
+* 6 Volumes
+
+* 7 docker-compose
+
+* 8 Swarm mode
+
+---
+
+## Final demo
+
+
+* Docker on Ryax CI/CD
+
+* Deployment with kubernetes
 
