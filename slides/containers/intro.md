@@ -30,22 +30,30 @@
 
 ## Tutorials
 
-* 1 Install docker
+[comment]: <> (Install docker after slide 71)
+[comment]: <> (Basic docker commands after slide 160)
+[comment]: <> (Working with images after slide 187)
+[comment]: <> (Building images after slide 327)
+[comment]: <> (Volumes after slide 354)
+[comment]: <> (Network after slide 428)
+[comment]: <> (docker-compose after slide 458)
+[comment]: <> (swarm mode after slide 599)
 
-* 2 Basic docker commands
+* 11% Install docker 
 
-* 3 Working with images
+* 25% Basic docker commands 
 
-* 4 Building images
+* 29% Working with images
 
-* 5 Network
+* 51% Building images
 
-* 6 Volumes
+* 56% Volumes
 
-* 7 docker-compose
+* 67% Network
 
-* 8 Swarm mode
-
+* 72% docker-compose
+ 
+* 94% Swarm mode
 ---
 
 ## Final demo

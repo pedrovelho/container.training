@@ -141,3 +141,24 @@ class: pic
   * etc.
 
 * Docker Inc. launches commercial offers.
+
+---
+
+## Docker CE vs Docker EE
+
+- Docker CE = Community Edition.
+
+- Available on most Linux distros, Mac, Windows.
+
+- Optimized for developers and ease of use.
+
+- Docker EE = Enterprise Edition.
+
+- Available only on a subset of Linux distros + Windows servers.
+
+  (Only available when there is a strong partnership to offer enterprise-class support.)
+
+- Optimized for production use.
+
+- Comes with additional components: security scanning, RBAC ...
+

@@ -354,3 +354,4 @@ class: extra-details
 
 * Devs can be empowered to make releases themselves
   more easily.
+
