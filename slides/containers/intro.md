@@ -1,15 +1,25 @@
-## Links
+## Remarks
 
-- Download all slides [here](https://pedrovelho.github.io/container.training/slides/slides.zip)
+- [Adapted from the free training initiated by Jérôme Petazzone](https://github.com/jpetazzo/container.training)
+
+- Download [slides.zip](https://pedrovelho.github.io/container.training/slides/slides.zip)
  
 - If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/containers.training)
 
 - [Tutorials](https://github.com/pedrovelho/containers.training.tutorials)
 
-- Check our example application rest-server [here](https://github.com/pedrovelho/containers.training.rest-server)
+- [keystore-rest-server](https://github.com/pedrovelho/containers.training.rest-server)
 
-- We included as much information as possible in these slides, we will skip some
- 
+- We included as much information as possible for you in these slides, we will skip some
+---
+
+## Practical Sesions
+
+- Each of you has 2 VMs: 1 worker, 1 manager
+
+- Use exclusively the manager until swarm tutorial, the last one.
+
+- If you did not receive an e-amil with credentials let me know asap
 
 ---
 

@@ -35,7 +35,7 @@ Docker<br/>
 
 ```
 
-These slides have been built from commit: 28a51279
+These slides have been built from commit: 203767e8
 
 
 [shared/title.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/shared/title.md)]
@@ -62,18 +62,29 @@ Password: **Something**
 
 .debug[[shared/title.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/shared/title.md)]
 ---
-## Links
+## Remarks
 
-- Download all slides [here](https://pedrovelho.github.io/container.training/slides/slides.zip)
+- [Adapted from the free training initiated by Jérôme Petazzone](https://github.com/jpetazzo/container.training)
+
+- Download [slides.zip](https://pedrovelho.github.io/container.training/slides/slides.zip)
  
 - If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/containers.training)
 
 - [Tutorials](https://github.com/pedrovelho/containers.training.tutorials)
 
-- Check our example application rest-server [here](https://github.com/pedrovelho/containers.training.rest-server)
+- [keystore-rest-server](https://github.com/pedrovelho/containers.training.rest-server)
 
-- We included as much information as possible in these slides, we will skip some
- 
+- We included as much information as possible for you in these slides, we will skip some
+.debug[[containers/intro.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/intro.md)]
+---
+
+## Practical Sesions
+
+- Each of you has 2 VMs: 1 worker, 1 manager
+
+- Use exclusively the manager until swarm tutorial, the last one.
+
+- If you did not receive an e-amil with credentials let me know asap
 
 .debug[[containers/intro.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/intro.md)]
 ---
@@ -96,22 +107,30 @@ Password: **Something**
 
 ## Tutorials
 
-* 1 Install docker
+[comment]: <> (Install docker after slide 71)
+[comment]: <> (Basic docker commands after slide 160)
+[comment]: <> (Working with images after slide 187)
+[comment]: <> (Building images after slide 327)
+[comment]: <> (Volumes after slide 354)
+[comment]: <> (Network after slide 428)
+[comment]: <> (docker-compose after slide 458)
+[comment]: <> (swarm mode after slide 599)
 
-* 2 Basic docker commands
+* 11% Install docker 
 
-* 3 Working with images
+* 25% Basic docker commands 
 
-* 4 Building images
+* 29% Working with images
 
-* 5 Network
+* 51% Building images
 
-* 6 Volumes
+* 56% Volumes
 
-* 7 docker-compose
+* 67% Network
 
-* 8 Swarm mode
-
+* 72% docker-compose
+ 
+* 94% Swarm mode
 .debug[[containers/intro.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/intro.md)]
 ---
 
@@ -678,6 +697,7 @@ class: extra-details
 * Devs can be empowered to make releases themselves
   more easily.
 
+
 .debug[[containers/Docker_Overview.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/Docker_Overview.md)]
 ---
 
@@ -858,6 +878,28 @@ class: pic
   * etc.
 
 * Docker Inc. launches commercial offers.
+
+.debug[[containers/Docker_History.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/Docker_History.md)]
+---
+
+## Docker CE vs Docker EE
+
+- Docker CE = Community Edition.
+
+- Available on most Linux distros, Mac, Windows.
+
+- Optimized for developers and ease of use.
+
+- Docker EE = Enterprise Edition.
+
+- Available only on a subset of Linux distros + Windows servers.
+
+  (Only available when there is a strong partnership to offer enterprise-class support.)
+
+- Optimized for production use.
+
+- Comes with additional components: security scanning, RBAC ...
+
 
 .debug[[containers/Docker_History.md](https://github.com/pedrovelho/container.training.git/tree/working/slides/containers/Docker_History.md)]
 ---
