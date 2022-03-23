@@ -6,7 +6,7 @@
  
 - If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/containers.training)
 
-- [Tutorials](https://github.com/pedrovelho/containers.training.tutorials)
+- [Tutorials](https://github.com/pedrovelho/container.training.tutorials)
 
 - [keystore-rest-server](https://github.com/pedrovelho/containers.training.rest-server)
 
@@ -27,7 +27,7 @@
 
 - [Docker documentation](https://docs.docker.com/get-started/)
 
-- [Docker forums](forums.docker.com)
+- [Docker forums](https://forums.docker.com/)
 
 - [StackOverflow](http://stackoverflow.com/questions/tagged/docker)
 
