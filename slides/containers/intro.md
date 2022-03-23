@@ -4,7 +4,7 @@
 
 - Download [slides.zip](https://pedrovelho.github.io/container.training/slides/slides.zip)
  
-- If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/containers.training)
+- If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/container.training)
 
 - [Tutorials](https://github.com/pedrovelho/container.training.tutorials)
 
