@@ -2,7 +2,7 @@
 
 - [Adapted from the free training initiated by Jérôme Petazzone](https://github.com/jpetazzo/container.training)
 
-- Download [slides.zip](https://pedrovelho.github.io/container.training/slides/slides.zip) OR [slides.pdf](https://pedrovelho.github.io/container.training/slides/slides.zip)
+- Download [slides.zip](https://pedrovelho.github.io/container.training/slides/slides.zip) OR [slides.pdf](https://pedrovelho.github.io/container.training/slides/slides.pdf)
 
  
 - If you find a typo or a non-working command please contribute to the [slides sources](https://github.com/pedrovelho/container.training)
